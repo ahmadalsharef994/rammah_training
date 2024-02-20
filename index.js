@@ -9,7 +9,7 @@ mongoose.connect(process.env.DB_URL, {
   }).then(() => {
   console.log('Connected to MongoDB');
   server = app.listen(process.env.API_PORT, () => {
-    console.log(`Listening to port ${process.env.API_PORT}`);
+    console.log(`Listening to port: ${process.env.API_PORT}`);
   });
 });
 
