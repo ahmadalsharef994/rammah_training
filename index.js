@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const app = require('./app');
 require('dotenv').config();
-
+const University = require('./university.model.js')
 
 let server;
 mongoose.connect(process.env.DB_URL, {
@@ -38,3 +38,4 @@ process.on('SIGTERM', () => {
     server.close();
   }
 });
+
